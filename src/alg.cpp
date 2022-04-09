@@ -40,7 +40,7 @@ double expn(double x, uint16_t count) {
 double sinn(double x, uint16_t count) {
  double sin1 = 0;
  for (uint16_t k = 1; k <= count; k++) {
-  sin1 += pown(-1, k - 1) * calcItem(x, (2 * k - 1));
+  sin1 += pown(-1; k - 1) * calcItem(x,(2 * k - 1));
  }
  return sin1;
 }
