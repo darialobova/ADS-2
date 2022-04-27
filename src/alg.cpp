@@ -31,7 +31,7 @@ double expn(double x, uint16_t count) {
   double exp1 = 1;
   int z = 1;
   while (count > z - 1) {
-    exp1 += calcItem(x,z);
+    exp1 += calcItem(x, z);
     z++;
   }
   return exp1;
@@ -40,7 +40,7 @@ double expn(double x, uint16_t count) {
 double sinn(double x, uint16_t count) {
   double sin1 = 0;
   for (uint16_t k = 1; k <= count; k++) {
-   sin1 += pown(-1, k - 1) * calcItem(x, (2 * k - 1));
+    sin1 += pown(-1, k - 1) * calcItem(x, (2 * k - 1));
   }
   return sin1;
 }
@@ -48,7 +48,7 @@ double sinn(double x, uint16_t count) {
 double cosn(double x, uint16_t count) {
   double cos1 = 0;
   for (uint16_t k = 1; k <= count; k++) {
-   cos1 += pown(-1, k - 1) * calcItem(x, (2 * k - 2));
+    cos1 += pown(-1, k - 1) * calcItem(x, (2 * k - 2));
   }
   return cos1;
 }
